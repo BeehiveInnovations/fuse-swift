@@ -1,12 +1,3 @@
-# Fuse
-
-[![CI Status](http://img.shields.io/travis/krisk/fuse-swift.svg?style=flat)](https://travis-ci.org/krisk/fuse-swift)
-[![Version](https://img.shields.io/cocoapods/v/Fuse.svg?style=flat)](http://cocoapods.org/pods/Fuse)
-[![License](https://img.shields.io/cocoapods/l/Fuse.svg?style=flat)](http://cocoapods.org/pods/Fuse)
-[![Platform](https://img.shields.io/cocoapods/p/Fuse.svg?style=flat)](http://cocoapods.org/pods/Fuse)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-red.svg)](https://www.paypal.me/kirorisk)
-[![Donate](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/fusejs)
-
 ## What is Fuse?
 
 Fuse is a super lightweight library which provides a simple way to do fuzzy searching.
@@ -104,20 +95,9 @@ fuse.search("Man", in: books, completion: { results in
 - `maxPatternLength`: The maximum valid pattern length. The longer the pattern, the more intensive the search operation will be. If the pattern exceeds the `maxPatternLength`, the `search` operation will return `nil`. Why is this important? [Read this](https://en.wikipedia.org/wiki/Word_(computer_architecture)#Word_size_choice). Defaults to `32`
 - `isCaseSensitive`: Indicates whether comparisons should be case sensitive. Defaults to `false`
 
-## Example Project
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
-Fuse is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "Fuse"
-```
+Fuse is available through [Swift Package Manager](https://swift.org/package-manager/). To add the package to your Xcode project, simply go to "File" -> "Swift Packages" -> "Add Package Dependency..." and paste the repo URL.
 
 ## License
 
